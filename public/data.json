@@ -1,0 +1,16 @@
+{
+    "nian":["高中","大学","英语","大学","大学","高中","高中"],
+    "xue":["前端","后端","微信小程序","uni-app","webpack","vue"],
+    "ke": ["全部","大班课","小班课","公开课","点播课","面授课","音频课","系统课","图文课","会员课"],
+    "teacher":[
+      {"name":"马老师课堂","time":"12月14日 08:00 ~ 12月14日 17:00","shi":"共3课时","head":"https://baijiayun-wangxiao.oss-cn-beijing.aliyuncs.com/uploads/avatar.jpg","names":"马兴龙","people":"125人已报名","money":"300.00"},
+      {"name":"田老师课堂","time":"12月15日 08:00 ~ 12月15日 17:00","shi":"共3课时","head":"https://baijiayun-wangxiao.oss-cn-beijing.aliyuncs.com/uploads/avatar.jpg","names":"田桂兴 ","people":"188人已报名","money":"300.00"},
+      {"name":"林老师课堂","time":"12月16日 08:00 ~ 12月16日 17:00","shi":"共3课时","head":"https://baijiayun-wangxiao.oss-cn-beijing.aliyuncs.com/uploads/avatar.jpg","names":"林光辉","people":"215人已报名","money":"300.00"},
+      {"name":"张老师课堂","time":"12月20日 08:00 ~ 12月20日 17:00","shi":"共3课时","head":"https://baijiayun-wangxiao.oss-cn-beijing.aliyuncs.com/uploads/avatar.jpg","names":"张志国","people":"201人已报名","money":"300.00"},
+      {"name":"王老师课堂","time":"12月21日 08:00 ~ 12月21日 17:00","shi":"共3课时","head":"https://baijiayun-wangxiao.oss-cn-beijing.aliyuncs.com/uploads/avatar.jpg","names":"王雯","people":"360人已报名","money":"300.00"},
+      {"name":"杨老师课堂","time":"12月22日 08:00 ~ 12月22日 17:00","shi":"共3课时","head":"https://baijiayun-wangxiao.oss-cn-beijing.aliyuncs.com/uploads/avatar.jpg","names":"杨岭","people":"100人已报名","money":"300.00"},
+      {"name":"苏老师课堂","time":"12月28日 08:00 ~ 12月28日 17:00","shi":"共3课时","head":"https://baijiayun-wangxiao.oss-cn-beijing.aliyuncs.com/uploads/avatar.jpg","names":"苏云平","people":"380人已报名","money":"300.00"},
+      {"name":"李老师课堂","time":"12月29日 08:00 ~ 12月29日 17:00","shi":"共3课时","head":"https://baijiayun-wangxiao.oss-cn-beijing.aliyuncs.com/uploads/avatar.jpg","names":"李美洁","people":"115人已报名","money":"300.00"},
+      {"name":"谢老师课堂","time":"12月30日 08:00 ~ 12月30日 17:00","shi":"共3课时","head":"https://baijiayun-wangxiao.oss-cn-beijing.aliyuncs.com/uploads/avatar.jpg","names":"谢龙","people":"75人已报名","money":"300.00"}
+    ]
+}
