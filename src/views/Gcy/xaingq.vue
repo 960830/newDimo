@@ -25,7 +25,7 @@
       <van-tab title="课程评价" name="c">
         <div class="pinjia">
           <div>
-            <!-- <img src="@/assets/logo.png" alt=""> -->
+            <!-- <img src="@/assets/img/1.jpg" alt=""> -->
           </div>
           <div>
             <p>AU辅助</p>

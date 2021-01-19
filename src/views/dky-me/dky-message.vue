@@ -1,10 +1,9 @@
 <template>
-<!-- 个人信息 -->
+    <!-- 个人信息 -->
     <div>
         <!-- 加入头部组件 -->
-         <headers />
-       
-        
+        <headers />
+
         <div>
             <!-- 头像 -->
             <p>
@@ -19,15 +18,19 @@
             </p>
             <!-- 姓名 -->
             <p>
-                <van-cell is-link title="姓名" @click="altername"/>
+                <van-cell is-link title="姓名" @click="altername">
+                    <span></span>
+                </van-cell>
             </p>
             <!-- 手机号码 -->
             <p>
-                <van-cell is-link title="手机号码" />
+                <van-cell is-link title="手机号码" @click="phone">
+                    <span></span>
+                </van-cell>
             </p>
             <!-- 性别 -->
             <p>
-                <van-cell is-link title="姓别" @click="altersex"/>
+                <van-cell is-link title="姓别" @click="altersex" />
             </p>
             <!-- 出生日期 -->
             <p>
@@ -71,9 +74,9 @@
             </p>
             <!-- 学科 -->
             <p>
-                <van-cell is-link title="学科" @click="subject= true" />
+                <van-cell is-link title="学科" @click="subject = true" />
                 <van-overlay :show="subject">
-                    <div class="wrapper" @click.stop="subject=false">
+                    <div class="wrapper" @click.stop="subject = false">
                         <div class="block">
                             <h2>学科选择</h2>
                             <ul>
@@ -87,21 +90,34 @@
                                 <li>历史</li>
                                 <li>地理</li>
                             </ul>
-                           <van-button round type="primary" size="large">确认</van-button>
+                            <van-button round type="primary" size="large"
+                                >确认</van-button
+                            >
                         </div>
-                    </div>van-
+                    </div>
+                    van-
                 </van-overlay>
             </p>
         </div>
     </div>
-</template>
+</template>z
 
 <script>
- import headers from "../../components/headers.vue"
+// import { message } from "@/utility/http";
+import {message} from "@/utility/api.js"
+import headers from "@/components/headers.vue";
 import { Toast } from "vant";
 import { Dialog } from "vant";
 export default {
-    components:{headers},
+    components: { headers },
+    created() {
+        // message().then(rel=>{
+        //     console.log(rel);
+        // })
+        message().then(res =>{
+            console.log(res);
+        })
+    },
     data() {
         return {
             //定义的头像
@@ -118,7 +134,7 @@ export default {
             grade: false,
             gradename: [{ name: "高一" }, { name: "高二" }, { name: "高三" }],
             //定义学科
-            subject:false
+            subject: false,
         };
     },
     methods: {
@@ -126,12 +142,18 @@ export default {
         onCancel() {
             Toast("取消");
         },
-        altername(){
-            this.$router.push({path:"/dky-alterName"})
+        // 性名
+        altername() {
+            this.$router.push({ path: "/dky-alterName" });
         },
-        altersex(){
-            this.$router.push({path:"/dky-sex"})
-        }
+        // 性别
+        altersex() {
+            this.$router.push({ path: "/dky-sex" });
+        },
+        // 手机号
+        phone() {
+            this.$router.push({ path: "/dky-phone" });
+        },
     },
 };
 </script>
@@ -145,29 +167,28 @@ export default {
     align-items: center;
     justify-content: center;
     height: 100%;
-  }
+}
 
-  .block {
+.block {
     width: 3rem;
     height: 3rem;
     border-radius: 0.2rem;
     background-color: #fff;
     text-align: center;
-    ul{
+    ul {
         margin: 0.02rem 0;
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        li{
+        li {
             width: 30%;
             height: 0.3rem;
             line-height: 0.3rem;
             border-radius: 0.05rem;
-            background-color: #F5F5F5;
-            color: #6A6A6A;
+            background-color: #f5f5f5;
+            color: #6a6a6a;
             margin: 0.1rem 0;
         }
-        
     }
-  }
+}
 </style>

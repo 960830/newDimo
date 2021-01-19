@@ -2,9 +2,9 @@
 <!-- 修改名字 -->
     <div class="dky-box">
         <!-- 添加头部组件 -->
-        <headers @xname="xname"/>
+        <headers @xphone="xphone"/>
         <div class="dky-name">
-            <input v-model="value" placeholder="请输入用户名" />
+            <input v-model="value" placeholder="请输入手机号" />
         </div>
     </div>
 </template>
@@ -19,8 +19,9 @@ export default {
         };
     },
     methods: {
-        xname() {
-            this.$store.commit("xname",this.value)
+        xphone() {
+            console.log(1);
+            this.$store.commit("xphone",this.value)
         }
     }
 

@@ -14,10 +14,11 @@
 
 <script>
     export default {
+        // props: ["list"],
         methods: {
             dkygo(){
                 this.$router.go(-1)
-            }
+            },
         },
     }
 </script>
@@ -54,7 +55,7 @@
     }
     .dky-title{
         text-align: center;
-        font-size: .4rem;
+        font-size: .35rem;
     }
     .dky-right{
         text-align: center;

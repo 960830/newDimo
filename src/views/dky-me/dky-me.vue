@@ -38,14 +38,14 @@
                             <p class="dky-one-bottom-2">我的课程</p>
                             <i class="dky-one-bottom-3">-已购选课程学习-</i>
                         </li>
-                        <li>
+                        <li @click="appoint">
                             <span class="dky-one-bottom-1">10</span>
-                            <p class="dky-one-bottom-2">我的课程</p>
+                            <p class="dky-one-bottom-2">我的预约</p>
                             <i class="dky-one-bottom-3">-已购选课程学习-</i>
                         </li>
-                        <li>
+                        <li @click="mebalance">
                             <span class="dky-one-bottom-1">10</span>
-                            <p class="dky-one-bottom-2">我的课程</p>
+                            <p class="dky-one-bottom-2">剩余课程币</p>
                             <i class="dky-one-bottom-3">-已购选课程学习-</i>
                         </li>
                     </ul>
@@ -74,18 +74,18 @@
                 <div class="dky-one-bottom">
                     <ul>
                         <li>
-                            <span class="dky-one-bottom-1">10</span>
+                            <span class="dky-one-bottom-1">0</span>
                             <p class="dky-one-bottom-2">我的课程</p>
                             <i class="dky-one-bottom-3">-已购选课程学习-</i>
                         </li>
-                        <li>
-                            <span class="dky-one-bottom-1">10</span>
-                            <p class="dky-one-bottom-2">我的课程</p>
+                        <li @click="appoint">
+                            <span class="dky-one-bottom-1">0</span>
+                            <p class="dky-one-bottom-2">我的预约</p>
                             <i class="dky-one-bottom-3">-已购选课程学习-</i>
                         </li>
-                        <li>
-                            <span class="dky-one-bottom-1">10</span>
-                            <p class="dky-one-bottom-2">我的课程</p>
+                        <li @click="mebalance">
+                            <span class="dky-one-bottom-1">0</span>
+                            <p class="dky-one-bottom-2">剩余课程币</p>
                             <i class="dky-one-bottom-3">-已购选课程学习-</i>
                         </li>
                     </ul>
@@ -93,7 +93,7 @@
             </div>
             
             <!-- 中间邀请注册 -->
-            <div class="dky-two">
+            <div class="dky-two" @click="invite">
                 <div>
                     <p>邀请好友注册APP，想多重好礼</p>
                     现实特惠，多邀多得
@@ -108,21 +108,21 @@
                 <div class="dky-three-box">
                     <h2>课程相关</h2>
                     <ul>
-                        <li>
+                        <li @click="work">
                             <img src="../../assets/imgs/img12.png" alt="">
                             <p>我的作业</p>
                         </li>
-                         <li>
+                         <li @click="attention">
                             <img src="../../assets/imgs/img07.png" alt="">
-                            <p>我的作业</p>
+                            <p>关注的老师</p>
                         </li> 
-                        <li>
+                        <li @click="collect">
                             <img src="../../assets/imgs/img08.png" alt="">
-                            <p>我的作业</p>
+                            <p>我的收藏</p>
                         </li>
-                         <li>
+                         <li @click="medownload">
                             <img src="../../assets/imgs/img12.png" alt="">
-                            <p>我的作业</p>
+                            <p>我的下载</p>
                         </li>
                     </ul>
                 </div>
@@ -130,65 +130,57 @@
                 <div class="dky-three-box">
                     <h2>订单相关</h2>
                     <ul>
-                        <li>
+                        <li @click="order">
                             <img src="../../assets/imgs/img12.png" alt="">
-                            <p>我的作业</p>
+                            <p>我的订单</p>
                         </li>
-                         <li>
+                         <li @click="site">
                             <img src="../../assets/imgs/img07.png" alt="">
-                            <p>我的作业</p>
+                            <p>收货地址</p>
                         </li> 
-                        <li>
-                            <img src="../../assets/imgs/img08.png" alt="">
-                            <p>我的作业</p>
-                        </li>
-                         <li>
-                            <img src="../../assets/imgs/img12.png" alt="">
-                            <p>我的作业</p>
-                        </li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
                 <!-- 我的账户 -->
                 <div class="dky-three-box">
                     <h2>我的账户</h2>
                     <ul>
-                        <li>
+                        <li @click="coupon">
                             <img src="../../assets/imgs/img12.png" alt="">
-                            <p>我的作业</p>
+                            <p>优惠卷</p>
                         </li>
-                         <li>
+                         <li @click="mestudy">
                             <img src="../../assets/imgs/img07.png" alt="">
-                            <p>我的作业</p>
+                            <p>学习卡</p>
                         </li> 
-                        <li>
+                        <li @click="member">
                             <img src="../../assets/imgs/img08.png" alt="">
-                            <p>我的作业</p>
+                            <p>会员</p>
                         </li>
-                         <li>
-                            <img src="../../assets/imgs/img12.png" alt="">
-                            <p>我的作业</p>
-                        </li>
+                        <li></li>
                     </ul>
                 </div>
                 <!-- 自动服务 -->
                 <div class="dky-three-box">
                     <h2>自动服务</h2>
                     <ul>
-                        <li>
+                        <li @click="message">
                             <img src="../../assets/imgs/img12.png" alt="">
-                            <p>我的作业</p>
+                            <p>我的信息</p>
                         </li>
-                         <li>
+                         <li @click="opinion">
                             <img src="../../assets/imgs/img07.png" alt="">
-                            <p>我的作业</p>
+                            <p>意见反馈</p>
                         </li> 
                         <li>
                             <img src="../../assets/imgs/img08.png" alt="">
-                            <p>我的作业</p>
+                            <p>在线客服</p>
                         </li>
-                         <li>
+                         
+                         <li @click="sets">
                             <img src="../../assets/imgs/img12.png" alt="">
-                            <p>我的作业</p>
+                            <p>设置</p>
                         </li>
                     </ul>
                 </div>
@@ -201,7 +193,70 @@
 </template>
 
 <script>
-export default {};
+export default {
+    methods: {
+        // 收藏
+        collect(){
+            this.$router.push({path:"/dky-collect"})
+        },
+        // 下载
+        medownload(){
+            this.$router.push({path:"/dky-medownload"})
+        },
+        // 订单
+        order(){
+            this.$router.push({path:"/dky-order"})
+        },
+        // 地址
+        site(){
+            this.$router.push({path:"/dky-site"})
+        },
+        // 优惠卷
+        coupon(){
+            this.$router.push({path:"/dky-coupon"})
+        },
+        // 学习卡
+        mestudy(){
+            this.$router.push({path:"/dky-mestudy"})
+        },
+        // 会员
+        member(){
+            this.$router.push({path:"/dky-member"})
+        },
+        // 个人信息
+        message(){
+            this.$router.push({path:"/dky-message"})
+        },
+        // 设置
+        sets(){
+            this.$router.push({path:"/dky-sets"})
+        },
+        // 意见反馈
+        opinion(){
+            this.$router.push({path:"/dky-opinion"})
+        },
+        // 要钱邀请
+        invite(){
+            this.$router.push({path:"/dky-invite"})
+        },
+        // 作业
+        work(){
+            this.$router.push({path:"/dky-work"})
+        },
+        // 关注老师
+        attention(){
+            this.$router.push({path:"/dky-attention"})
+        },
+        // 预约
+        appoint(){
+            this.$router.push({path:"/dky-appoint"})
+        },
+        //余额
+        mebalance(){
+            this.$router.push({path:"/dky-mebalance"})
+        }
+    }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -331,14 +386,17 @@ export default {};
                     margin: 0.4rem 0.3rem;
                 }
                 ul{
+                    width: 100%;
                     display:flex;
-                    justify-content: space-between;
+                    justify-content:left;
                     align-items: center;
                     text-align: center;
                     border-bottom: 0.1rem;
                     li{
+                        width: 33%;
                         img{
-                            width: 50%;
+                            // width: 50%;
+                            height: .8rem;
                         }
                     }
                 }
