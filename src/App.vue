@@ -18,6 +18,7 @@
 // <<<<<<< HEAD
 html {
   font-size: 100px;
+  // font-size: 0.3rem;
 }
 // =======
 ol,ul{
