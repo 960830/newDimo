@@ -327,7 +327,7 @@ export default {};
                 border-bottom: 0.05rem solid #eee;
                 background-color: #fff;
                 h2{
-                    font-size: .4rem;
+                    font-size: 0.4rem;
                     margin: 0.4rem 0.3rem;
                 }
                 ul{
