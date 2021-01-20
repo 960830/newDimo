@@ -9,13 +9,13 @@
             price="1008.0"
             desc="845人已报名"
             title="如何成为旅游体验师"
-            thumb="../../assets/imgs/tu_26.jpg"
+            thumb="@/assets/imgs/tu_26.jpg"
         />
     </div>
 </template>
 
 <script>
-import headers from "../../components/headers.vue"
+import headers from "@/components/headers.vue"
 export default {
     components:{headers},
 };

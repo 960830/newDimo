@@ -7,7 +7,7 @@
             <div class="dky-box">
                 <div class="dky-top">
                     <div class="dky-top1">
-                        <img src="../../assets/imgs/huiyuan.png" alt="" />
+                        <img src="@/assets/img/huiyuan.png" alt="" />
                     </div>
                     <div class="dky-top2">
                         <p>木木</p>
@@ -34,11 +34,11 @@
                     <h2>会员特权</h2>
                     <ol>
                         <li>
-                            <img src="../../assets/imgs/img09.png" alt="" />
+                            <img src="@/assets/img/img09.png" alt="" />
                             <p>课程全场八折</p>
                         </li>
                         <li>
-                            <img src="../../assets/imgs/img09.png" alt="" />
+                            <img src="@/assets/img/img09.png" alt="" />
                             <p>会员课程免费看</p>
                         </li>
                     </ol>
@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import headers from "../../components/headers.vue";
+import headers from "@/components/headers.vue";
 export default {
     components: { headers },
 };

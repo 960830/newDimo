@@ -1,10 +1,10 @@
 <template>
     <div class="dky-tou">
         <div class="dky-top">
-            <img src="../assets/imgs/tu_01.jpg" alt="">
+            <img src="@/assets/img/tu_01.jpg" alt="">
         </div>
         <div class="dky-bottom">
-            <div @click="dkygo"><img src="../assets/imgs/img0111.jpg" alt=""> </div>
+            <div @click="dkygo"><img src="@/assets/img/img0111.jpg" alt=""> </div>
             <div class="dky-title">{{this.$route.meta.title}}</div>
             <div class="dky-right">{{this.$route.meta.mage}}</div>
         </div>

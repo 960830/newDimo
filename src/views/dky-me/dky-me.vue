@@ -4,7 +4,7 @@
         <!-- 我的页面上方的半圆图片 -->
         <div>
             <img
-                src="../../assets/imgs/user_bg.ab306a5c.png"
+                src="@/assets/img/user_bg.ab306a5c.png"
                 alt=""
                 class="dky-topimg"
             />
@@ -17,18 +17,18 @@
                 <div class="dky-one-top">
                     <div class="dky-one-top-left">
                         <img
-                            src="../../assets/imgs/avatar.jpg"
+                            src="@/assets/img/avatar.jpg"
                             class="dky-tou"
                         />
                         <i>
                             小文师弟
                             <img
-                                src="../../assets/imgs/01.png"
+                                src="@/assets/img/01.png"
                                 class="dky-one-min"
                             />
                         </i>
                     </div>
-                    <div class="dky-one-top-right"> <img src="../../assets/imgs/02.png" /></div>
+                    <div class="dky-one-top-right"> <img src="@/assets/img/02.png" /></div>
                 </div>
 
                 <div class="dky-one-bottom">
@@ -56,13 +56,13 @@
                 <div class="dky-one-top">
                     <div class="dky-one-top-left">
                         <img
-                            src="../../assets/imgs/avatar.jpg"
+                            src="@/assets/img/avatar.jpg"
                             class="dky-tou"
                         />
                         <i>
                             <span>登录</span> / <span>注册</span>
                             <img
-                                src="../../assets/imgs/01.png"
+                                src="@/assets/img/01.png"
                                 class="dky-one-min"
                             />
                         </i>
@@ -109,19 +109,19 @@
                     <h2>课程相关</h2>
                     <ul>
                         <li @click="work">
-                            <img src="../../assets/imgs/img12.png" alt="">
+                            <img src="@/assets/img/img12.png" alt="">
                             <p>我的作业</p>
                         </li>
                          <li @click="attention">
-                            <img src="../../assets/imgs/img07.png" alt="">
+                            <img src="@/assets/img/img07.png" alt="">
                             <p>关注的老师</p>
                         </li> 
                         <li @click="collect">
-                            <img src="../../assets/imgs/img08.png" alt="">
+                            <img src="@/assets/img/img08.png" alt="">
                             <p>我的收藏</p>
                         </li>
                          <li @click="medownload">
-                            <img src="../../assets/imgs/img12.png" alt="">
+                            <img src="@/assets/img/img12.png" alt="">
                             <p>我的下载</p>
                         </li>
                     </ul>
@@ -131,11 +131,11 @@
                     <h2>订单相关</h2>
                     <ul>
                         <li @click="order">
-                            <img src="../../assets/imgs/img12.png" alt="">
+                            <img src="@/assets/img/img12.png" alt="">
                             <p>我的订单</p>
                         </li>
                          <li @click="site">
-                            <img src="../../assets/imgs/img07.png" alt="">
+                            <img src="@/assets/img/img07.png" alt="">
                             <p>收货地址</p>
                         </li> 
                         <li></li>
@@ -147,15 +147,15 @@
                     <h2>我的账户</h2>
                     <ul>
                         <li @click="coupon">
-                            <img src="../../assets/imgs/img12.png" alt="">
+                            <img src="@/assets/img/img12.png" alt="">
                             <p>优惠卷</p>
                         </li>
                          <li @click="mestudy">
-                            <img src="../../assets/imgs/img07.png" alt="">
+                            <img src="@/assets/img/img07.png" alt="">
                             <p>学习卡</p>
                         </li> 
                         <li @click="member">
-                            <img src="../../assets/imgs/img08.png" alt="">
+                            <img src="@/assets/img/img08.png" alt="">
                             <p>会员</p>
                         </li>
                         <li></li>
@@ -166,20 +166,20 @@
                     <h2>自动服务</h2>
                     <ul>
                         <li @click="message">
-                            <img src="../../assets/imgs/img12.png" alt="">
+                            <img src="@/assets/img/img12.png" alt="">
                             <p>我的信息</p>
                         </li>
                          <li @click="opinion">
-                            <img src="../../assets/imgs/img07.png" alt="">
+                            <img src="@/assets/img/img07.png" alt="">
                             <p>意见反馈</p>
                         </li> 
                         <li>
-                            <img src="../../assets/imgs/img08.png" alt="">
+                            <img src="@/assets/img/img08.png" alt="">
                             <p>在线客服</p>
                         </li>
                          
                          <li @click="sets">
-                            <img src="../../assets/imgs/img12.png" alt="">
+                            <img src="@/assets/img/img12.png" alt="">
                             <p>设置</p>
                         </li>
                     </ul>

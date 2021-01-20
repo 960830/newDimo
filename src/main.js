@@ -4,7 +4,7 @@ import router from "./router";
 import store from "./store";
 import "./rem/rem.js";
 
-import http from "./utility/http.js";
+import http from "./util/http.js";
 Vue.prototype.$http = http;
 
 // 配置vant
@@ -13,16 +13,16 @@ import "vant/lib/index.css";
 Vue.use(Vant);
 
 // 配置axios信息
-import axios from "axios";
-axios.defaults.baseURL = "http://120.53.31.103:84";
-axios.interceptors.request.use((config) => {
-    config.headers.Authorization = window.sessionStorage.getItem("token");
-    config.headers = {
-        deviceType: "H5",
-    };
-    return config;
-});
-Vue.prototype.$axios = axios;
+// import axios from "axios";
+// axios.defaults.baseURL = "http://120.53.31.103:84";
+// axios.interceptors.request.use((config) => {
+//     config.headers.Authorization = window.sessionStorage.getItem("token");
+//     config.headers = {
+//         deviceType: "H5",
+//     };
+//     return config;
+// });
+// Vue.prototype.$axios = axios;
 
 // 路由导航守卫
 // router.beforeEach((to, from, next) => {

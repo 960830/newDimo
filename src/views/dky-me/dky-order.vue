@@ -15,7 +15,7 @@
 
         <!-- 书本信息 -->
         <div class="dky-two">
-            <img src="../../assets/imgs/tu_30.jpg" alt="" />
+            <img src="@/assets/img/tu_30.jpg" alt="" />
             <div>
                 <p>钢铁是怎样炼成的钢铁是怎样炼成的钢铁是怎样炼成的</p>
                 <span>￥119.00</span>
@@ -93,9 +93,9 @@
 </template>
 
 <script>
-import { ref } from "vue";
+// import { ref } from "vue";
 import { Dialog } from "vant";
-import headers from "../../components/headers.vue";
+import headers from "@/components/headers.vue";
 export default {
     components: { headers },
     data() {

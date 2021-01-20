@@ -4,7 +4,7 @@
         <!-- 头部组件 -->
         <headers />
         <div class="dky-img">
-            <img src="../../assets/imgs/yaoqing.png" alt="">
+            <img src="@/assets/img/yaoqing.png" alt="">
         </div>
         <div class="dky-bottom">
             <p class="dky-left">分享到微信</p>
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import headers from '../../components/headers.vue'
+import headers from '@/components/headers.vue'
     export default {
   components: { headers },
         

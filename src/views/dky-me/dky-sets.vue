@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import headers from "../../components/headers.vue";
+import headers from "@/components/headers.vue";
 export default {
     components: { headers },
     data() {

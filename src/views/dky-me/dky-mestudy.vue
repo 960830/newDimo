@@ -17,7 +17,7 @@
                         <p>学习卡号：<span>12123123123</span></p>
                         
                     </div>
-                    <img src="../../assets/imgs/1.png" alt="">
+                    <img src="@/assets/img/1.png" alt="">
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import headers from '../../components/headers.vue'
+import headers from '@/components/headers.vue'
     export default {
   components: { headers },
         

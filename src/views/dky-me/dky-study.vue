@@ -62,7 +62,7 @@
     </div>
 </template>
 <script>
-import headers from "../../components/headers.vue";
+import headers from "@/components/headers.vue";
 import { Dialog } from "vant";
 export default {
     components: { headers },

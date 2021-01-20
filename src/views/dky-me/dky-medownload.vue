@@ -17,7 +17,7 @@
         <!-- 下载完成的 -->
         <div>
             <div class="dky-over">
-                <img src="../../assets/imgs/img09.png" alt="" />
+                <img src="@/assets/img/img09.png" alt="" />
                 <div>
                     <p>课程名字</p>
                     <p class="dky-over-2">
@@ -32,7 +32,7 @@
 </template>
 
 <script>
- import headers from "../../components/headers.vue"
+ import headers from "@/components/headers.vue"
 export default {
     components:{headers},
     };

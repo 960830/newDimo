@@ -19,7 +19,7 @@
                         <span>待支付</span>
                     </div>
                     <div class="dky-big-two">
-                        <img src="../../assets/imgs/tu_30.jpg" alt="">
+                        <img src="@/assets/img/tu_30.jpg" alt="">
                         <p>钢铁是怎样炼成的钢铁是怎样炼成的钢铁是怎样炼成的</p>
                     </div>
                     <div class="dky-big-there">
@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import headers from "../../components/headers.vue";
+import headers from "@/components/headers.vue";
 export default {
     components: { headers },
     data() {

@@ -6,7 +6,7 @@
         <div>
             <div class="dky-box">
                 <div class="dky-left">
-                    <img src="../../assets/imgs/avatar.jpg" alt="" />
+                    <img src="@/assets/img/avatar.jpg" alt="" />
                 </div>
                 <div class="dky-center">
                     <p>李湘老师<i>已关注</i></p>
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import headers from "../../components/headers.vue";
+import headers from "@/components/headers.vue";
 export default {
     components: { headers },
 };

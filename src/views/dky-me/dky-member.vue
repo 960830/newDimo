@@ -8,7 +8,7 @@
             <!--卡片 -->
             <div class="dky-box">
                 <div>
-                    <img src="../../assets/imgs/huiyuan.png" />
+                    <img src="@/assets/img/huiyuan.png" />
                 </div>
                 <div class="dky-center">
                     <h1>青铜会员</h1>
@@ -21,7 +21,7 @@
             </div>
             <div class="dky-box">
                 <div>
-                    <img src="../../assets/imgs/huiyuan.png" />
+                    <img src="@/assets/img/huiyuan.png" />
                 </div>
                 <div class="dky-center">
                     <h1>白银会员</h1>
@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import headers from "../../components/headers.vue";
+import headers from "@/components/headers.vue";
 export default {
     components: { headers },
     methods: {

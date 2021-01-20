@@ -71,7 +71,7 @@
 
 <script>
 import { ActionSheet } from "vant";
-import headers from "../../components/headers.vue";
+import headers from "@/components/headers.vue";
 export default {
     components: { headers },
     data() {

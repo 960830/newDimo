@@ -103,8 +103,7 @@
 </template>z
 
 <script>
-// import { message } from "@/utility/http";
-import {message} from "@/utility/api.js"
+import {message} from "@/util/api.js"
 import headers from "@/components/headers.vue";
 import { Toast } from "vant";
 import { Dialog } from "vant";
