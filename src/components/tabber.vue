@@ -1,11 +1,11 @@
 <template>
     <div>
         <van-tabbar>
-            <van-tabbar-item icon="wap-home">首页</van-tabbar-item>
-            <van-tabbar-item icon="font">课程</van-tabbar-item>
+            <van-tabbar-item icon="wap-home" to="/gy_homes">首页</van-tabbar-item>
+            <van-tabbar-item icon="font" to="/curriculum">课程</van-tabbar-item>
             <van-tabbar-item icon="column">咨询</van-tabbar-item>
             <van-tabbar-item icon="youzan-shield">图书</van-tabbar-item>
-            <van-tabbar-item icon="manager">我的</van-tabbar-item>
+            <van-tabbar-item icon="manager" to="/dky-me">我的</van-tabbar-item>
         </van-tabbar>
     </div>
 </template>

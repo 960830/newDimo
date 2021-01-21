@@ -9,4 +9,9 @@ export default [
         name: 'xaingq',
         component: () => import('../views/Gcy/xaingq.vue')
     },
+    {
+        path: '/curriculum',
+        name: 'curriculum',
+        component: () => import('../views/Gcy/curriculum.vue')
+    },
 ]

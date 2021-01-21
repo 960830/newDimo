@@ -22,7 +22,7 @@ export default [
    {
        path: '/gy_login',
        name: 'gy_login',  
-       component: () => import("@/views/Gy/Login/gy_login.vue"),
+       component: () => import("@/views/Gy/Login/gy_login.vue")
    },
    //特色课页面
    {

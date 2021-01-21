@@ -160,116 +160,65 @@
         </ul>
       </div>
 
-      <!-- 知名老师开始 -->
-      <div class="zhiming">
-        <div class="zhitou">
-          <p>知名老师</p>
+      <div class="zhitou" v-for="item in indexlist" :key="item.channel_info.id">
+        <div class="ming">
+          <h4>{{item.channel_info.name}}</h4>
           <span>更多 ></span>
         </div>
-        <ul class="zhi">
-          <li v-for="(item,key) in userlist" :key="key" @click="tiao()">
-            <img src="@/assets/img/tu_34.jpg" alt />
-            <div class="zd1">
-              <div class="zd2">
-                <p class="zp1">{{item.name}}</p>
-                <p class="zp2">{{item.di}}</p>
-              </div>
-              <span>{{item.j}}</span>
-            </div>
-          </li>
-        </ul>
+
+        <p class="zhong">
+          <ul>
+            <li v-for="(el,index) in item.list" :key="index">
+              <img :src="el.teacher_avatar" alt />
+              <!-- <div class="zd1">
+                <div class="zd2">
+                  <p class="zp1"></p>
+                  <p class="zp2"></p>
+                </div>
+              </div> -->
+            </li>
+          </ul>
+        </p>
       </div>
-      <!-- 知名老师开始 -->
-      <div class="zhiming">
-        <div class="zhitou">
-          <p>明星老师</p>
-          <span>更多 ></span>
-        </div>
-        <ul class="zhi">
-          <li v-for="(item,key) in namelist" :key="key" @click="tiao()">
-            <img src="@/assets/img/tu_34.jpg" alt />
-            <div class="zd1">
-              <div class="zd2">
-                <p class="zp1">{{item.user}}</p>
-                <p class="zp2">{{item.di}}</p>
-              </div>
-              <span>{{item.jb}}</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- 知名老师开始 -->
-      <div class="zhiming">
-        <div class="zhitou">
-          <p>推荐老师</p>
-          <span>更多 ></span>
-        </div>
-        <ul class="zhi">
-          <li v-for="(item,key) in goodslist" :key="key" @click="tiao()">
-            <img src="@/assets/img/tu_34.jpg" alt />
-            <div class="zd1">
-              <div class="zd2">
-                <p class="zp1">{{item.names}}</p>
-                <p class="zp2">{{item.di}}</p>
-              </div>
-              <span>{{item.jp}}</span>
-            </div>
-          </li>
-        </ul>
-      </div>
+      
     </div>
+    <tab />
   </div>
 </template>
 
 <script>
 import gyhometr from "@/components/toulist.vue";
+import tab from "@/components/tabber.vue";
+import { getlist } from "@/util/api.js";
+import { indexlist } from "@/util/api.js";
 export default {
   name: "",
   data() {
     return {
-      userlist: [],
-      namelist: [],
-      goodslist: [],
+      indexlist: [],
     };
   },
 
   components: {
     gyhometr,
+    tab
   },
 
   mounted() {
-    this.getdata();
-    this.getdatas();
-    this.getdatax();
+    //获取banner轮播图
+    getlist().then((res) => {
+      console.log(res);
+    });
+
+    //获取首页列表
+    indexlist().then((res) => {
+      console.log(res);
+      this.indexlist = res.data;
+    });
   },
 
   computed: {},
   methods: {
-    //获取本地数据
-    getdata() {
-      this.$axios.get("./Home.json").then((res) => {
-        console.log(res);
-
-        this.userlist = res.data;
-      });
-    },
-    //获取本地数据
-    getdatas() {
-      this.$axios.get("./Home2.json").then((res) => {
-        console.log(res);
-
-        this.namelist = res.data;
-      });
-    },
-    //获取本地数据
-    getdatax() {
-      this.$axios.get("./Home3.json").then((res) => {
-        console.log(res);
-
-        this.goodslist = res.data;
-      });
-    },
-
     //跳转特色课详情
     tiao1() {
       this.$router.push("/gy_index");
@@ -289,6 +238,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: none;
+  overflow: scroll;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+body {
+  margin: 0;
+}
 .HH {
   height: 100%;
   display: flex;
@@ -299,7 +263,7 @@ export default {
   width: 100%;
   flex-grow: 1;
   overflow-y: scroll;
-  // overflow: hidden;
+
   overflow-x: hidden;
 }
 
@@ -354,7 +318,7 @@ export default {
         width: 0.8rem;
         display: block;
         margin: 0 auto;
-        // vertical-align: top;
+
       }
       p {
         font-size: 0.3rem;
@@ -388,7 +352,7 @@ export default {
 }
 .left {
   width: 3.5rem;
-  border-right: 0.01rem solid f6f6f6;
+  border-right: 0.01rem solid #f6f6f6;
   height: 2.98rem;
   p {
     font-size: 0.3rem;
@@ -452,7 +416,7 @@ export default {
     padding-bottom: 0.3rem;
     li {
       width: 2.9rem;
-      background: #fff;
+      background: rgb(19, 13, 13);
       border-radius: 0.2rem;
       margin-right: 0.16rem;
       img {
@@ -460,7 +424,7 @@ export default {
         margin: 0 auto;
         width: 2.7rem;
         height: 1.5rem;
-        // vertical-align: top;
+  
       }
       p {
         font-size: 0.3rem;
@@ -516,7 +480,7 @@ export default {
       div {
         display: flex;
         flex-wrap: wrap;
-        // height: 0.4rem;
+     
         .rip2 {
           display: flex;
           flex-wrap: wrap;
@@ -556,72 +520,51 @@ export default {
 
 .zhitou {
   width: 6.9rem;
-  height: 1.04rem;
+  height:4rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-
-  p {
-    font-size: 0.28rem;
-    font-weight: bold;
-    border-left: 0.06rem solid red;
-    // height: 0.3rem;
-    padding-left: 0.22rem;
-  }
-  span {
-    font-size: 0.2rem;
-    color: #bebebe;
-    display: block;
-  }
-}
-
-.zhi {
-  li {
-    width: 6.3rem;
-    border: 0.02rem solid #fafafa;
-    padding: 0.3rem 0.3rem 0.26rem 0.3rem;
-    margin: 0 auto;
+  .ming {
+    width: 6.9rem;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 0.32rem;
-    img {
-      width: 0.88rem;
-      height: 0.88rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    h4 {
+      font-size: 0.28rem;
+      font-weight: bold;
+      border-left: 0.06rem solid red;
+
+      padding-left: 0.22rem;
+    }
+    span {
+      font-size: 0.2rem;
+      color: #bebebe;
       display: block;
     }
-    .zd1 {
-      width: 5rem;
-      margin-left: 0.22rem;
-      .zd2 {
-        display: flex;
-        flex-wrap: wrap;
-        height: 0.52rem;
-        line-height: 0.52rem;
-        .zp1 {
-          font-size: 0.28rem;
-          font-weight: bold;
-          line-height: 0rem;
+  }
+  .zhong{
+     width: 6.3rem;
+     height: 1rem;
+     background: blue;
+    ul{
+      width: 6.3rem;
+      height: 1rem;
+      li{
+        width: 6.3rem;
+        height: 1rem;
+        border: 0.02rem solid #fafafa;
+
+        img{
+           width: 0.88rem;
+          height: 0.88rem;
+          display: block;
         }
-        .zp2 {
-          font-size: 0.22rem;
-          color: #999999;
-          margin-top: 0.04rem;
-          margin-left: 0.2rem;
-        }
-      }
-      span {
-        font-size: 0.22rem;
-        display: block;
-        color: #999;
-        width: 4.96rem;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
       }
     }
   }
 }
 </style>
-

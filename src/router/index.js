@@ -7,6 +7,12 @@ import Gcy from './Gcy'
 Vue.use(VueRouter)
 
 const routes = [
+
+  // {
+  //   path: '/home',
+  //   name: 'home',
+  //   component: () => import('../views/home.vue')
+  // },
   ...Dky,
   ...Gcy,
   ...Gy

@@ -33,7 +33,7 @@ export default {
   width: 100%;
   height: 0.88rem;
   position: fixed;
-  bottom: 0.46rem;
+  bottom: 0rem;
 }
 .but-box > .van-button {
   width: 100%;

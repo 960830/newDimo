@@ -6,7 +6,7 @@
       </i>
       <span>{{ this.tet }}</span>
       <i class="icon-m">
-        <van-icon name="star-o" />
+        <van-icon name="star-o"/>
       </i>
       <i>
         <van-icon name="ellipsis" @click="fenX"/>
@@ -49,8 +49,9 @@ export default {
   height: 0.8rem;
   padding: 0 0.2rem;
   box-sizing: border-box;
+  background: #fff;
   p {
-      line-height: 0.4rem;
+      line-height: 0.8rem;
       text-align: center;
     span {
       font-size: 0.32rem;

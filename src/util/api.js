@@ -2,9 +2,10 @@ import http from "./http.js";
 
 // 轮播图
 export const banner = () => http.get("banner");
+// 课程列表
+export const curriculum = (params) => http.get(`courseBasis`,{params});
 // 课程详情
-export const curriculum = () => http.get("courseClassify");
-
+export const Details = (id) => http.get(`courseInfo/basis_id=${id}`)
 // 邓凯源
 // 个人信息
 export const message = () => http.get("userInfo")

@@ -56,10 +56,6 @@
             <li>15元</li>
           </ul>
         </div>
-        <div class="shai-but">
-          <van-button>重置</van-button>
-          <van-button type="warning">确认</van-button>
-        </div>
       </van-dropdown-item>
     </van-dropdown-menu>
   </div>
@@ -144,14 +140,6 @@ export default {
       line-height: 0.6rem;
       margin-top: 0.24rem;
     }
-  }
-}
-.shai-but {
-  width: 100%;
-  height: 1.02rem;
-  .van-button {
-    width: 50%;
-    height: 100%;
   }
 }
 </style>

@@ -1,26 +1,21 @@
 <template>
   <div id="app">
-    
+
     <router-view/>
   </div>
 </template>
-
+  
 <style lang="scss">
-// <<<<<<< HEAD
-// * {
-// =======
 *{
-// >>>>>>> origin/dky
+
   margin: 0;
   padding: 0;
-  font-size: 0.3rem;
+  font-size: 0.2rem;
 }
-// <<<<<<< HEAD
 html {
   font-size: 100px;
-  // font-size: 0.3rem;
 }
-// =======
+
 ol,ul{
   list-style: none;
 }
@@ -31,6 +26,4 @@ i{
     width: 100%;
     height: 100%;
 }
-
-// >>>>>>> origin/dky
 </style>
